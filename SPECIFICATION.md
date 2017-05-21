@@ -1,6 +1,6 @@
 # SPIFFE Verifiable Identity Document (SVID) Document Specification
 
-**Document Version**: 0.3	**Status**: Draft
+**Document Version**: 0.4	**Status**: Draft
 
 ## Revision History
 
@@ -9,6 +9,7 @@ Version | Description | Date
 0.1 | Initial document, derived from discussion in the SPIFFE SRI document.	| 5/5/2017
 0.2 | Added examples. Updated based on SPIFFE cert-format SIG meeting | 5/15/2017
 0.3 | Removed version field from SAN | 5/17/2017
+0.4 | Changed name to SPIFFE Verifiable Identity Document | 5/20/2017
 
 ## Background
 SPIFFE describes both a API specification for and a reference implementation of a software framework for issuing identities to workloads. A part of the SPIFFE specification must necessarily include (a) an agreed format for naming identities (the “SPIFFE name”), and (b) is a set of documents that may be issued by the SPIFFE framework that can subsequently be used by two independently hosted workloads to mutually verify each other’s identity without a third party. 
