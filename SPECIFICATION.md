@@ -78,7 +78,7 @@ Authority Key Identifier (AKID) | SPIFFE certificates will specify an AKID which
 Subject Key Identifier (SKID) |Used in path building before path validation. 
 Basic Constraint | The extension indicates whether a certificate is a CA or not. BasicConstraints  is set to `CA:false` and is marked critical for leaf certificates. SVIDs must not use `pathLenConstraint`.
 Extended Key Usage | Define what a certificate can be used for. Leaf certificates are constrained `id-kp-serverAuth` and `id-kp-clientAuth`.
-Key Usage | The following keys must be marked as critical: `nonRepudiation`, `digitalSignature`, `keyEncipherment`.
+Key Usage | The following keys must be marked as critical: `keyAgreement`, `digitalSignature`, `keyEncipherment`.
 
 #### Leaf Certificate Validation 
 For a SPIFFE leaf certificate to be considered valid, all chain certificates must be checked and not have expired, and have a valid signature. 
